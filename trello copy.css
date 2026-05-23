@@ -1,0 +1,50 @@
+.board-container {
+    display: flex;
+    flex-direction: row; /* Put them side-by-side */
+    
+    /* THE MAGIC LINE: This pushes the first item all the way to the left, 
+       and the second item all the way to the right automatically! */
+    justify-content: space-between; 
+    
+    padding: 2rem;
+    min-height: 80vh;
+}
+.card {
+    display: flex;
+    flex-direction: column; /* Stack the tasks inside the card straight down */
+    width: 45%; /* Give each column less than half the screen width */
+    background-color: #1A0B2E; /* That awesome Toxic Sludge purple! */
+    border: 2px solid #39FF14; /* Biohazard Lime border */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    color: #d4f9d6;
+}
+body {
+    background-color: #0D0214;
+    font-family: Arial, sans-serif;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+button {
+    background-color: #717171;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+    border-radius: 15px;
+    width: 9rem;
+    margin-left: 15px;
+}
+button:hover {
+    transform: translateY(-5px);
+}
+button:active {
+    transform: translateY(5px);
+}
+.task-delete-btn {
+    width: 25px;
+}
